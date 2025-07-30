@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>📋 Title Extractor</h1>
+    <div class="controls">
+      <button id="exportBtn" title="Export titles as JSON">📥 Export</button>
+      <button id="clearBtn" title="Clear all saved titles">🗑️ Clear</button>
+    </div>
+  </div>
+  
+  <div class="stats">
+    <span id="titleCount">0 titles saved</span>
+  </div>
+  
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search titles...">
+  </div>
+  
+  <div class="titles-container">
+    <div id="titlesList"></div>
+    <div id="noTitles" class="no-titles" style="display: none;">
+      No titles saved yet. Browse some websites to start collecting titles!
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

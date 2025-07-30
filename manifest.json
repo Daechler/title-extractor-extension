@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Title Extractor",
+  "version": "1.0",
+  "description": "Extracts and saves the title of each tab you open",
+  
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "downloads"
+  ],
+  
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  
+  "browser_action": {
+    "default_title": "View Saved Titles",
+    "default_popup": "popup.html"
+  }
+}
