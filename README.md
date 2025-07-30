@@ -1,2 +1,2 @@
-# title-extractor-extension
+# Title Extractor Extension
 Title Extractor Extension
